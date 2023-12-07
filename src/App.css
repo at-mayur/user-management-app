@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+.App{
+  width: 98vw;
+  height: 99vh;
+  box-sizing: border-box;
+  padding: 10px;
+  overflow: scroll;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.overScroll::-webkit-scrollbar{
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-header{
+  border-bottom: 2px solid black;
+  box-sizing: border-box;
+  padding-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-header h4{
+  background-color: rgb(238, 124, 2);
+  box-sizing: border-box;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+}
+
+.create-search-actions{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-action input{
+  width: 30vw;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 2px solid rgb(135, 174, 222);
+  border-radius: 5px;
+}
+
+.search-action input:focus{
+  outline: 2px solid rgb(135, 174, 222);
+}
+
+.create-action button{
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  border: none;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.create-action button:hover{
+  background-color: rgb(0, 101, 0);
+}
+
+.create-action button span{
+  margin: 0 3px;
+}
+
+.search-action button{
+  background: transparent;
+  border: none;
+  outline: none;
+  color: navy;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.create-user-form{
+  width: 70%;
+  margin: auto;
+}
+
+.create-user-form form{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.create-user-form form div{
+  width: 80%;
+  margin: 10px;
+}
+
+.create-user-form form label{
+  display: block;
+  color: rgb(208, 158, 93);
+}
+
+.create-user-form input{
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid brown;
+  outline: none;
+  color: rgb(172, 63, 63);
+  font-size: 14px;
+}
+
+.create-user-form select{
+  width: 50%;
+  font-size: 14px;
+  color: rgb(172, 63, 63);
+}
+
+.create-user-form select option{
+  margin: 5px;
+}
+
+.create-user-form button{
+  background-color: white;
+  color: rgb(172, 67, 67);
+  border: 2px solid rgb(172, 67, 67);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.create-user-form button:hover{
+  border: none;
+  background-color: rgb(172, 67, 67);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.user-list-titles{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user-list-titles p{
+  border-bottom: 2px solid black;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+
+.user-list{
+  height: 70vh;
+  overflow: scroll;
 }

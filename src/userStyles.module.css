@@ -1,0 +1,80 @@
+.userContainer{
+    width: 100%;
+    background-color: rgba(173, 123, 123, 0.482);
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 2px 0;
+}
+
+.userDetails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete{
+    color: rgb(204, 0, 0);
+    margin-left: 10px;
+}
+
+.edit{
+    color: navy;
+}
+
+.updateUserForm{
+    width: 70%;
+    margin: auto;
+  }
+  
+  .updateUserForm form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .updateUserForm form div{
+    width: 80%;
+    margin: 10px;
+  }
+  
+  .updateUserForm form label{
+    display: block;
+    color: rgb(208, 158, 93);
+  }
+  
+  .updateUserForm input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid brown;
+    outline: none;
+    color: rgb(172, 63, 63);
+    font-size: 14px;
+    background: transparent;
+  }
+  
+  .updateUserForm select{
+    width: 50%;
+    font-size: 14px;
+    color: rgb(172, 63, 63);
+    background: transparent;
+  }
+  
+  .updateUserForm select option{
+    margin: 5px;
+  }
+  
+  .updateUserForm button{
+    background-color: white;
+    color: rgb(172, 67, 67);
+    border: 2px solid rgb(172, 67, 67);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .updateUserForm button:hover{
+    border: none;
+    background-color: rgb(172, 67, 67);
+    color: white;
+  }
+  
